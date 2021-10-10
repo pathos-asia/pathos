@@ -37,7 +37,6 @@ const config = {
     fontFamily: {
       sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
       serif: ['Lora', ...defaultTheme.fontFamily.serif]
-			// sans: ['Josefin Sans', ...defaultTheme.fontFamily.sans],
 		},
     extend: {},
   },
