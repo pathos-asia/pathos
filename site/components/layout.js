@@ -1,18 +1,14 @@
-import Alert from './alert'
-import Footer from './footer'
-import Meta from './meta'
+import Meta from './atoms/meta'
+import Appbar from '@/components/appbar'
 import 'lazysizes'
 import 'lazysizes/plugins/parent-fit/ls.parent-fit'
 
-export default function Layout({ preview, children }) {
+export default function Layout({ children }) {
   return (
     <>
       <Meta />
-      <div className="min-h-screen font-serif">
-        <Alert preview={preview} />
-        <main>{children}</main>
-      </div>
-      <Footer />
+      <div>{children}</div>
+      <Appbar />
     </>
   )
 }
